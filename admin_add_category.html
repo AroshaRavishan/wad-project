@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+
+
+<head>
+    <meta charset="utf-8">
+    <title>FAT BOY KITCHEN</title>
+    <link rel="stylesheet" href="css/admin_add.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+
+</head>
+<body>
+    
+    <!--navbar-->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">FAT BOY KITCHEN<em></em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+
+
+
+
+                            <li class="main-button1"><a href="login.html">Log out</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    
+<div class="add">
+    <form method="POST" Action="admin_add_category.php">
+        <div class="form-group">
+            <label class="lbl">Add New Food Category </label>
+            <input type="text" id="category_name" name="category_name" placeholder="New Food Category"><br><br>
+
+    <button type="submit" name="submit" id="submit" onclick="return validate();">Submit</button>
+
+            
+        </div>
+
+      
+    </form>
+
+</div>
+    <script>
+        function validate()
+        {
+            var a=document.getElementById("category_name").value;
+
+            if(a=="")
+            {
+                alert("select the category");
+                return false;
+            }
+        }
+    </script>   
+
+    
+</body>
+</html>

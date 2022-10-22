@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <input type="checkbox" id="show" class="show" />
+    <!-- Title+Button -->
+    <label for="show" class="title">sign up<i class="flag left"></i><i class="flag right"></i></label>
+    <!-- Form -->
+    <form action="REGISTER.PHP" class="form" method="POST">
+        <!-- First Name -->
+        <div class="group">
+            <div class="col-1">
+                <label for="f-name">first name</label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="f-name" placeholder="First Name" name="firstName" />
+            </div>
+        </div>
+        <!-- Last Name -->
+        <div class="group">
+            <div class="col-1">
+                <label for="l-name">last name</label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="l-name" placeholder="Last Name" name="lastName" />
+            </div>
+        </div>
+        <!-- Password -->
+        <div class="group">
+            <div class="col-1">
+                <label for="password">your password</label>
+            </div>
+            <div class="col-2">
+                <input type="password" id="password" placeholder="password" name="password" />
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="group">
+            <div class="col-1">
+                <label for="email">your email</label>
+            </div>
+            <div class="col-2">
+                <input type="email" id="email" placeholder="example@email.com" name="email" />
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <input type="submit" class="submit" value="submit" name="submit" />
+    </form>
+
+
+
+
+</body>
+
+</html>

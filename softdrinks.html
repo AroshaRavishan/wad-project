@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FAT BOY KITCHEN</title>
+    <link rel="stylesheet" href="css/softdrinks.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+
+
+
+
+</head>
+
+<body>
+    <!--navbar-->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">FAT BOY KITCHEN<em></em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="home.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="food_center.html">Food Center</a></li>
+                            <li class="scroll-to-section"><a href="about.html">Abouts us</a></li>
+                            <li class="scroll-to-section"><a href="contact us.html">Order</a></li>
+                            <li class="main-button"><a href="index.html">Log Out</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!--end navbar-->
+
+
+    <!--social media-->
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li>
+                <img src="images/facebook.png" width="32" height="32">
+                <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+            </li>
+            <li>
+                <img src="images/twitter.png" width="32" height="32">
+                <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+            </li>
+            <li>
+                <img src="images/instagram.png" width="32" height="32">
+                <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Instagarm</a></p>
+            </li>
+            <li>
+                <img src="images/linkedin.png" width="32" height="32">
+                <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+            </li>
+
+    </div>
+    <!--END social media-->
+
+
+    <!--video-->
+
+    <div class="bg-video-wrap">
+        <video src="images/video/production ID_4114185.mp4" loop muted autoplay>
+        </video>
+        <div class="overlay">
+        </div>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>FEEl the taste</h6>
+                <h2>Soft <em>Drinks</em></h2>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--end video-->
+
+
+    <!--food select-->
+
+    <div class="food">
+
+        <h1>Choose Your Order</h1>
+
+        <form class="boxed">
+            <input type="radio" id="cocacola" name="cocacola" value="cocacola">
+            <label for="cocacola">
+        <img src="images/softdrinks/pexels-alleksana-4113663.jpg" class="img-fluid">
+        <h6 class="type"> Cocacola</h6>
+        <h6 class="type">Rs.170.00</h6>
+        <h6>Qty</h6>
+        <input type="text" name="qty" id="qty_Cola" >
+      </label>
+
+            <input type="radio" id="pepsi" name="pepsi" value="pepsi">
+            <label for="pepsi">
+        <img src="images/softdrinks/pexels-martin-péchy-1292294.jpg" class="img-fluid">
+        <h6 class="type">pepsi </h6>
+        <h6 class="type">Rs.200.00</h6>
+        <h6>Qty</h6>
+        <input type="text" name="qty" id="qty_Pep" >
+      </label>
+
+            <input type="radio" id="applejuice" name="applejuice" value="applejuice">
+            <label for="applejuice">
+            <img src="images/softdrinks/sidral-mundet-vOe74MTq5dY-unsplash.jpg" class="img-fluid">
+             <h6 class="type">Apple Juice </h6>
+             <h6 class="type">Rs.650.00</h6>
+             <h6>Qty</h6>
+        <input type="text" name="qty" id="qty_App" >
+        </label>
+
+            <input type="radio" id="redbull" name="redbull" value="redbull">
+            <label for="redbull">
+         <img src="images/softdrinks/jesper-brouwers-B2Cs6kw5VNM-unsplash.jpg" class="img-fluid">
+        <h6 class="type"> Redbull</h6>
+        <h6 class="type">Rs.350.00</h6>
+        <h6>Qty</h6>
+        <input type="text" name="qty" id="qty_Red" >
+        </label>
+
+            <input type="radio" id="tiger" name="tiger" value="tiger">
+            <label for="tiger">
+          <img src="images/softdrinks/xiaoyu-li-iA3MXYzZNAo-unsplash.jpg " class="img-fluid">
+        <h6 class="type"> Tiger</h6>
+        <h6 class="type">Rs.450.00</h6>
+        <h6>Qty</h6>
+        <input type="text" name="qty" id="qty_Ti" >
+        </label>
+
+            <br><br>
+            <a href="contact us.html">
+                <input type="button"  id="submit" value="Watch Delivery"  
+                style="height: 60px; width:150px; background-color: skyblue; margin-left: 720px; 
+               font-weight: bold;border:5px solid #6f0c0c;">
+            </a>
+           
+                <button id="hello" onclick="calculate();" >Order Now</button>
+             
+
+               
+
+        
+<script>
+
+function calculate()
+{
+    var dCola = document.getElementById("qty_Cola").value;
+    var dPep = document.getElementById("qty_Pep").value;
+    var dApp = document.getElementById("qty_App").value;
+    var dRed = document.getElementById("qty_Red").value;
+    var dTi = document.getElementById("qty_Ti").value;
+
+    if (dCola != "")
+    {
+        var price_Cola = dCola * 170;
+        var dTotal = price_Cola;
+    }
+    else if (dPep != "")
+    {
+        var price_Pep = dPep * 200;
+        var dTotal = price_Pep;
+    }
+    else if (dApp != "")
+    {
+        var price_App = dApp * 650;
+        var dTotal = price_App;
+    }
+    else if (dRed != "")
+    {
+        var price_Red = dRed * 350;
+        var dTotal = price_Red;
+    }
+    else if (dTi != "")
+    {
+        var price_Ti = dTi * 450;
+        var dTotal = price_Ti;
+    }
+
+    
+
+    alert(dTotal);
+}
+</script>
+
+        </form>
+
+    </div>
+
+    <!--end food select-->
+
+
+
+
+    <!--footer start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+
+                        </a>
+                        <p class="footer-info-text">
+                            Best Food For You
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>FAT BOY KITCHEN</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>FAT BOY KITCHEN</h3>
+                                    <p>
+
+                                        Feel the Better Taste
+
+                                    </p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>+94 117 321 000</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="aboutus.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="our team.html">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="contact us.html">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p>
+                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                    Feel the Awesome Taste </p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                    <i class="fa fa-send"></i>
+                                                </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2021, All Right Reserved FAT BOY KITCHEN</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                    <i class="fa fa-angle-up"></i>
+                </button>
+        </div>
+        <!-- End Back to top -->
+    </footer>
+    <!--end footer-->
+
+</body>
+
+</html>
